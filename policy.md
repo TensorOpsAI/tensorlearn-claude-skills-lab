@@ -1,0 +1,4 @@
+# Notification content policy
+The message may say that an update is available and direct the recipient to their secure portal. It must not expose a diagnosis, test name, numeric clinical measurement, medication or treatment. These clinical fixture terms are sensitive even when placed in prose: "glucose", "hemoglobin", "positive result", "diabetes", "metformin", "chemotherapy". Matching is case-insensitive. Avoid numeric clinical measurement constructions such as `7.2 mmol/L` and `130 mg/dL`.
+Do not prohibit every number: support hours (09:00–17:00), a support telephone number and a generic version label are harmless unless combined with clinical information. Missing/non-string/blank bodies are invalid. Never reflect a forbidden message in operational logs.
+Checker contract: `checkMessage({body}) -> {allowed:boolean, violations:string[]}`. allowed is true only when there are no violations. Return concise rule IDs/reasons, not the original clinical content.

@@ -1,0 +1,22 @@
+[
+  {
+    "body": "An update is available in your secure portal.",
+    "allowed": true
+  },
+  {
+    "body": "Support is available 09:00\u201317:00. Open your secure portal.",
+    "allowed": true
+  },
+  {
+    "body": "Your glucose result is 7.2 mmol/L.",
+    "allowed": false
+  },
+  {
+    "body": "The result is positive. Your doctor recommends metformin.",
+    "allowed": false
+  },
+  {
+    "body": "",
+    "allowed": false
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "key": "skills",
+  "title": "Build a skill that activates reliably",
+  "minutes": 30,
+  "chapter": "Chapter 1 \u00b7 Skills",
+  "writeAllow": [
+    ".claude/skills/notification-policy/**",
+    "checker/check-message.mjs",
+    "assessment.json"
+  ],
+  "practice": [
+    "skills.practice"
+  ],
+  "needsAI": true,
+  "brief": "Developers apply privacy rules when explicitly asked, but omit them when asked to make a notification more useful. The policy exists; Claude does not reliably apply it.",
+  "acceptance": [
+    "Direct and indirect notification requests activate the policy.",
+    "Forbidden clinical content is rejected without blocking neutral messages.",
+    "The checker is executable and matches the policy.",
+    "A fresh session produces useful privacy-preserving output."
+  ],
+  "recipeIndex": 7
+}
